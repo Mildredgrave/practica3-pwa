@@ -103,7 +103,7 @@ export default function TaskForm({ students, addTask }: Props) {
         aria-disabled={!title.trim()}
         className="transition-all duration-200 shrink-0"
         style={{
-          background: title.trim() ? '#0071e3' : '#e8e8ed',
+          background: title.trim() ? '#b57fe2' : '#e8e8ed',
           color: title.trim() ? '#ffffff' : '#6e6e73',
           borderRadius: '980px',
           padding: '9px 20px',

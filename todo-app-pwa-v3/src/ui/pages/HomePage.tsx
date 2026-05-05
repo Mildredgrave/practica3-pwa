@@ -22,6 +22,10 @@ function HomePage() {
     onComplete,
   } = useTaskActions();
 
+  const visibleTasks = student
+    ? tasks.filter((task) => task.assignedto === student.id)
+    : [];
+
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#f5f5f7' }}>
       <header
@@ -65,7 +69,7 @@ function HomePage() {
           >
             Lista de tareas
           </p>
-          <TaskList tasks={tasks} onComplete={onComplete} />
+          <TaskList tasks={visibleTasks} onComplete={onComplete} />
         </section>
       </main>
 

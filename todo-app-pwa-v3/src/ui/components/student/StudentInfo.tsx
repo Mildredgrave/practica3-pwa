@@ -37,7 +37,7 @@ export default function StudentInfo({ student, onRegisterStudentOpen }: Props) {
         aria-label="Registrar o cambiar estudiante"
         className="shrink-0 transition-all duration-200"
         style={{
-          background: '#0071e3',
+          background: '#f9afe9',
           color: '#ffffff',
           borderRadius: '980px',
           padding: '8px 16px',
@@ -47,10 +47,10 @@ export default function StudentInfo({ student, onRegisterStudentOpen }: Props) {
           cursor: 'pointer',
           letterSpacing: '-0.01em',
         }}
-        onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = '#0077ed'; }}
-        onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = '#0071e3'; }}
-        onMouseDown={e => { (e.currentTarget as HTMLButtonElement).style.background = '#006bce'; }}
-        onMouseUp={e => { (e.currentTarget as HTMLButtonElement).style.background = '#0077ed'; }}
+        onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = '#f9afe9'; }}
+        onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = '#f9afe9'; }}
+        onMouseDown={e => { (e.currentTarget as HTMLButtonElement).style.background = '#f9afe9'; }}
+        onMouseUp={e => { (e.currentTarget as HTMLButtonElement).style.background = '#f9afe9'; }}
       >
         Registrar
       </button>

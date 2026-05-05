@@ -184,7 +184,7 @@ export default function StudentRegisterDialog({
             disabled={isSubmitting}
             className="w-full transition-all duration-200"
             style={{
-              background: isSubmitting ? '#a0c4f1' : '#0071e3',
+              background: isSubmitting ? '#b577df' : '#d6a1fa',
               color: '#ffffff',
               borderRadius: '980px',
               padding: '12px 24px',
@@ -195,10 +195,10 @@ export default function StudentRegisterDialog({
               letterSpacing: '-0.01em',
               marginTop: '8px',
             }}
-            onMouseEnter={e => { if (!isSubmitting) (e.currentTarget as HTMLButtonElement).style.background = '#0077ed'; }}
-            onMouseLeave={e => { if (!isSubmitting) (e.currentTarget as HTMLButtonElement).style.background = '#0071e3'; }}
-            onMouseDown={e => { if (!isSubmitting) (e.currentTarget as HTMLButtonElement).style.background = '#006bce'; }}
-            onMouseUp={e => { if (!isSubmitting) (e.currentTarget as HTMLButtonElement).style.background = '#0077ed'; }}
+            onMouseEnter={e => { if (!isSubmitting) (e.currentTarget as HTMLButtonElement).style.background = '#d6a1fa'; }}
+            onMouseLeave={e => { if (!isSubmitting) (e.currentTarget as HTMLButtonElement).style.background = '#d6a1fa'; }}
+            onMouseDown={e => { if (!isSubmitting) (e.currentTarget as HTMLButtonElement).style.background = '#d6a1fa'; }}
+            onMouseUp={e => { if (!isSubmitting) (e.currentTarget as HTMLButtonElement).style.background = '#d6a1fa'; }}
           >
             {isSubmitting ? 'Registrando…' : 'Registrar'}
           </button>
